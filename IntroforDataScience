@@ -3,66 +3,55 @@ Specific, case-sensitive name
 Call up value through the variable name
 Ex: 1.79m or 68.7kg
 
-In [1]: height = 1.79
-In [2]: weight = 68.7
+>>> height = 1.79
+>>> weight = 68.7
+>>> height
+1.79
 
-In [3]: height  (calling)
-Out[3]:1.79     (result)
-
-In [4]: 68.7 / 1.79 ** 2
-Out[4]: 21.4413
-
+>>> 68.7/1.79**2
+21.44127836209856
 same as
+>>> weight/height**2
+21.44127836209856
 
-In [5]: weight / height ** 2
-Out[5]: 21.4413
-
-In [6]: bmi = weight / height ** 2
-
-In[7]: bmi
-Out[7]: 21.4413
-
+or
+>>> bmi = weight / height ** 2
+>>> bmi
+21.44127836209856
 
 other way
-height = 1.79
-weight = 68.7
-bmi = weight / height ** 2
-print(bmi)
+>>> height = 1.79
+>>> weight = 68.7
+>>> bmi = weight / height ** 2
+>>> print(bmi)
+21.44127836209856
 
-Output:
-21.4413
-
-
+_____________________________
 Variables - Types
 
-In[8]: type(bmi)
-Out[8]: float
+>>> type(bmi)
+float
 
 other type
-In[9]: day_of_week = 5
-
-In [10]: type(day_of_week)
-Out[10]: int
-
-other type
-In [11]: x = "body mass index"
-In [12]: y = 'this works too'
-
-In [13]: type(y)
-Out[13]: str
+>>> day_of_week = 5
+>>> type(day_of_week)
+int
 
 other type
-In[14]: z = true
+>>> x = "body mass index"
+>>> y = 'this works too'
+>>> type(y)
+str
 
-In[15]: type(z)
-Out[15]: bool
+other type
+>>> z = true
+>>> type(z)
+bool
 
+Integer and strings (for a differente type => different behavior)
+>>> 2 + 3
+5
 
-Integer and strings
-In [16]: 2 + 3
-Out [16]: 5
+>>> 'ab' + 'cd'
+'abcd'
 
-In[17]: 'ab' + 'cd'
-Out[17]: 'abcd'
-
-*Conclusion: differente type = different behavior
